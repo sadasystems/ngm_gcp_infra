@@ -20,9 +20,9 @@ Packer is easy to use and automates the creation of any type of machine image. I
 
 Packer makes it extremely easy to take advantage of all these benefits.
 
-## Packer files for AgilOne
+## Packer files 
 
-Packer files were created with AgilOne use-case in-mind.  There are two main packer configurations.
+Packer files were created with two use-cases in-mind.  There are two main packer configurations.
 
 1. BaseImage - The base-image is used for creating a copy of the base Ubuntu image provided in GCP (see template.json file for version).  Once the image is created and stored in GCP, it can be the "source image" for almost all of the compute instances provisioned in this code.  *The Benefit:* - You can customize OS configuration, harden the OS, and install apps that you may want globally-available.
 
