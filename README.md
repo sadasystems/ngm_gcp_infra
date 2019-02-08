@@ -199,7 +199,7 @@ It is important to understand the function of Terraform state data. That topic i
 
 [Q] - What kind of branching strategy was used for development of this repo?
 
-[A] - We used a branching strategy called "git flow", which is pretty useful, for a single person, up to many persons, working locally or remotely.  The key is that you don't typically don't work diretly int the master branch or develop branch.  In fact, in this repo, those branches are protected, and require a pull request to merge changes into. See: https://datasift.github.io/gitflow/IntroducingGitFlow.html for more detail on git flow.
+[A] - We used a branching strategy called "git flow", which is pretty useful, for a single person, or up to many persons, working locally or remotely.  The key is that you don't typically don't work diretly int the master branch or develop branch.  In fact, in this repo, those branches are protected, and require a pull request to merge changes into. See: https://datasift.github.io/gitflow/IntroducingGitFlow.html for more detail on git flow.
 
 ### Troubleshooting
 
