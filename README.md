@@ -6,15 +6,6 @@ This repository contains the Terraform code for Northgate Markets Infrastructure
 
 If you just need to just go, you know how to execute this code already, and don't wish to read all the info below ( *strongly-recommended* ), simply run the following commands from the top-level directly.
 
-First time image builds with Packer:
-```bash
-$ export TF_VAR_project_id=northgate-markets-gcp
-$ export TF_VAR_zone=us-west1-a
-$ packer build ./Packer/BaseImage/template.json
-...
-$ packer build ./Packer/OpenVpn/template.json
-...
-```
 Provision all infrastructure:
 ```bash
 $ export TF_VAR_env=dev
