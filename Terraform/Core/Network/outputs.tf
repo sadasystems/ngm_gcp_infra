@@ -1,4 +1,4 @@
 output "name" {
-  value       = "${module.agilone-network.name}"
+  value       = "${module.network.name}"
   description = "The unique name of the network"
 }

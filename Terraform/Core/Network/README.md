@@ -10,12 +10,7 @@ This component provisions the Google VPC network and subnetworks.
 
 | Account | Environment | Network | Name | CIDR Range | Number of IPs | Purpose |
 | ------| ------| ------ | ------ | ------ | ------ |  ------ |
-| agilone-gcp | POC | agilone-vpc | us-west1-red | 172.16.1.0/24 | 254 | Used by public-facing services such as load balancers and vpn endpoints.
-| agilone-gcp | POC  | agilone-vpc | us-west1-pink | 172.16.3.0/24 | 254 | Used by backend database compute instances.
-| agilone-gcp | POC  | agilone-vpc | us-west1-blue | 172.16.4.0/24 | 254 | Used by frontend web services or proxies compute instances.
-| agilone-gcp | POC   | agilone-vpc | us-west1-green | 172.16.8.0/24 | 254 | Used by API service compute instances.
-| agilone-gcp | POC   | agilone-vpc | us-west1-black |172.16.12.0/22| 1022| Used by CDH services compute instances.
-| agilone-gcp | POC  | agilone-vpc | google-managed-services-agilone-vcp | 172.16.16.0/20 |4094 | RESERVED ip range used for vpc peering with google managed services.
+| ngm-datalake-gcp | POC | ngm-datalake-vpc | mgmt-red | 172.16.1.0/24 | 254 | Management Subnetwork  |
 
 
 ---
