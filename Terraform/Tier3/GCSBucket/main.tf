@@ -1,5 +1,5 @@
 module "bucket" {
-  source           = "git@github.com:sadasystems/gcp_tf_modules.git//gcp/gcs_bucket/v1?ref=feature/NG-50-gcs-bucket"
+  source           = "git@github.com:sadasystems/gcp_tf_modules.git//gcp/gcs_bucket/v1?ref=master"
   project_id       = "${var.project_id}"
   name             = "${var.name}"
   region           = "${var.region}"

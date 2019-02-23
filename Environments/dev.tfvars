@@ -4,12 +4,11 @@
 # practices: https://github.com/gruntwork-io/terragrunt
 # ---------------------------------------------------------------------------------------------------------------------
 
-project_id = ""
+project_id = "gplerma-sada-test"
 
-region = ""
+region = "us-central1"
 
-zone = ""
-
+zone = "us-central1-a"
 
 # Add your list of global public ssh keys.  Theys keys will be made available to 
 # all instances, project-wide that allow them.

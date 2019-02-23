@@ -38,7 +38,7 @@ lifecycle_rules = [
   ]
 */
 
-
+# append these users to the permissions set.
 role_entities = [
     "WRITER:user-ngclouddevp@northgatemarkets.com"
 ]
