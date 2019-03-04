@@ -1,6 +1,6 @@
 # Terraform Component
 
-Tier3 Dataflow Job
+Dataflow Job
 
 ## Description
 
