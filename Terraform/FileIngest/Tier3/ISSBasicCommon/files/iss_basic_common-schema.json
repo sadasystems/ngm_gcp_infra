@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "name": "IssuerRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "IssuerName",
+      "type": "STRING"
+    },
+    {
+      "name": "IssuerType",
+      "type": "STRING"
+    }
+  ]
+}

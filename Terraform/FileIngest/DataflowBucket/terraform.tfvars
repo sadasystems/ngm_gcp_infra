@@ -18,24 +18,10 @@ terragrunt = {
 #
 # Module Parameter Values
 #
-name = "ngm-tier3-files"
-force_destroy = false
+name = "ngm-dataflow"
 
+/*
 lifecycle_rules = [
-    {
-      action = [
-        {
-          type = "SetStorageClass",
-          storage_class = "COLDLINE"
-        },
-      ]
-
-      condition = [
-        {
-          age = 30
-        },
-      ]
-    },
     {
       action = [
         {
@@ -45,34 +31,11 @@ lifecycle_rules = [
 
       condition = [
         {
-          age = 365
+          age = 90
         },
       ]
     },
   ]
+*/
 
 # append these users to the permissions set.
-role_entities = [
-    "WRITER:user-ngclouddevp@northgatemarkets.com"
-]
-
-
-#
-# GCS Bucket Objects
-#
-bucket = "ngm-tier3-files"
-
-object_list = [
-  {
-    source = "files/dummyfile.txt",
-    destination = "tier3/"
-  },
-  {
-    source = "files/dummyfile.txt",
-    destination = "powercheck/"      
-  }
-]
-
-# append these additional users object permissions.
-object_role_entities = [
-]

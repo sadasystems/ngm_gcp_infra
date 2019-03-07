@@ -3,6 +3,7 @@ variable "force_destroy" {
   default     = "false"
 }
 
+
 variable "lifecycle_rules" {
   default = []
   type    = "list"
@@ -10,6 +11,7 @@ variable "lifecycle_rules" {
 
 variable "name" {
   description = "The name of the bucket - NOTE: The project name will be concatonated to this name."
+  default = ""
 }
 
 variable "project_id" {
@@ -42,18 +44,3 @@ variable "website_config" {
   type    = "list"
 }
 
-variable "bucket" {
-  description = "The name of the bucket to copy file objects to"
-  type = "string"
-}
-
-variable "object_list" {
-  description = ""
-  type        = "list"
-  default     = []
-}
-
-variable "object_role_entities" {
-  default = []
-  type    = "list"
-}

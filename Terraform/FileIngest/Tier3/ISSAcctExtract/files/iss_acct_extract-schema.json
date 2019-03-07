@@ -1,0 +1,16 @@
+{
+  "fields": [
+    {
+      "name": "IssuerRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "RoutingNumber",
+      "type": "INTEGER"
+    },
+    {
+      "name": "AccountNumber",
+      "type": "STRING"
+    }
+  ]
+}
