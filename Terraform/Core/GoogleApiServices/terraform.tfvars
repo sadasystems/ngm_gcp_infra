@@ -30,4 +30,5 @@ services_list = [
 "resourceviews.googleapis.com", 
 "container.googleapis.com", 
 "storage-api.googleapis.com",
+"stackdriver.googleapis.com"
 ]
