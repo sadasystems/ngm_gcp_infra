@@ -11,7 +11,7 @@ terragrunt = {
   }
 
   dependencies {
-    paths = ["../../Core/GoogleApiServices"]
+    paths = ["../Core/GoogleApiServices"]
   }
 }
 
