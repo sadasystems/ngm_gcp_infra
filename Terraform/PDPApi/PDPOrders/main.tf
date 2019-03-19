@@ -1,3 +1,4 @@
+/*
 module "upload_files" {
   source      = "git@github.com:sadasystems/terraform_modules.git//gcp/gcs_bucket_object/v1"
   bucket_name = "${var.bucket}"
@@ -18,3 +19,4 @@ module "dataflow" {
   max_workers = "${var.max_workers}"
   on_delete   = "${var.on_delete}"
 }
+*/

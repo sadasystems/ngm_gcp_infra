@@ -17,6 +17,7 @@ terragrunt = {
 #
 services_list = [
 "dataflow.googleapis.com",
+"datastore.googleapis.com",
 "oslogin.googleapis.com",
 "bigquery-json.googleapis.com",
 "containerregistry.googleapis.com",
