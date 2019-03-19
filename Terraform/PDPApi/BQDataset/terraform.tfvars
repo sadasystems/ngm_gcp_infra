@@ -11,7 +11,7 @@ terragrunt = {
   }
 
   dependencies {
-    paths = ["../../../Core/GoogleApiServices"]
+    paths = ["../../Core/GoogleApiServices"]
   }
 }
 
@@ -22,12 +22,12 @@ terragrunt = {
 #
 # BigQuery
 #
-dataset_id = "powercheck"
+dataset_id = "pdp"
 friendly_name = ""
 dataset_description = "Powercheck Transactions"
 delete_contents_on_destroy = true
 dataset_labels = {
-  dataset = "powercheck"
+  dataset = "pdp"
 }
 
 time_partitioning = [

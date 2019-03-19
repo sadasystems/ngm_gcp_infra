@@ -27,7 +27,7 @@ friendly_name = ""
 dataset_description = "Tier3 Transactions"
 delete_contents_on_destroy = true
 dataset_labels = {
-  data_type = "tier3"
+  dataset = "tier3"
 }
 
 time_partitioning = [
