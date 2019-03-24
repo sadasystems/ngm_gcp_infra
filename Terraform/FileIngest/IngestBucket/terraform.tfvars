@@ -19,7 +19,7 @@ terragrunt = {
 # Module Parameter Values
 #
 name = "ngm-tier3-files"
-force_destroy = false
+force_destroy = true
 
 lifecycle_rules = [
     {
@@ -35,20 +35,7 @@ lifecycle_rules = [
           age = 30
         },
       ]
-    },
-    {
-      action = [
-        {
-          type = "Delete"
-        },
-      ]
-
-      condition = [
-        {
-          age = 365
-        },
-      ]
-    },
+    }
   ]
 
 # append these users to the permissions set.

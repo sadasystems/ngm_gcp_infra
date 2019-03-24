@@ -19,6 +19,7 @@ terragrunt = {
 # Module Parameter Values
 #
 name = "ngm-dataflow"
+force_destroy = false
 
 /*
 lifecycle_rules = [
