@@ -18,7 +18,7 @@
     },
     {
       "name": "CustomerRefNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "TellerRefNo",
@@ -54,7 +54,7 @@
     },
     {
       "name": "AccountNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "IssuerRefNo",

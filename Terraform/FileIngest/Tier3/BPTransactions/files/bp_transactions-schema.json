@@ -42,7 +42,7 @@
     },
     {
       "name": "ServiceProviderRefNo",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "ServiceProvider",
