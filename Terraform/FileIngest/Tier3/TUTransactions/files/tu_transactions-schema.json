@@ -1,0 +1,56 @@
+{
+  "fields": [
+    {
+      "name": "TransactionRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "StoreRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "Date",
+      "type": "STRING"
+    },
+    {
+      "name": "Time",
+      "type": "STRING"
+    },
+    {
+      "name": "CustomerRefNumber",
+      "type": "INTEGER"
+    },
+    {
+      "name": "TellerRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "Amount",
+      "type": "FLOAT"
+    },
+    {
+      "name": "Fee",
+      "type": "FLOAT"
+    },
+    {
+      "name": "Net",
+      "type": "FLOAT"
+    },
+    {
+      "name": "Product",
+      "type": "STRING"
+    },
+    {
+      "name": "ServiceProviderRefNo",
+      "type": "INTEGER"
+    },
+    {
+      "name": "ServiceProvider",
+      "type": "STRING"
+    },
+    {
+      "name": "RecipientPhoneNumber",
+      "type": "INTEGER"
+    }
+  ]
+}

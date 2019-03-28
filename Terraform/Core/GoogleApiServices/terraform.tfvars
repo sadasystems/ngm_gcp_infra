@@ -16,6 +16,8 @@ terragrunt = {
 # Module Parameter Values
 #
 services_list = [
+"dataflow.googleapis.com",
+"datastore.googleapis.com",
 "oslogin.googleapis.com",
 "bigquery-json.googleapis.com",
 "containerregistry.googleapis.com",
@@ -29,4 +31,5 @@ services_list = [
 "resourceviews.googleapis.com", 
 "container.googleapis.com", 
 "storage-api.googleapis.com",
+"stackdriver.googleapis.com"
 ]

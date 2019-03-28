@@ -1,0 +1,12 @@
+{
+  "fields": [
+    {
+      "name": "CustomerRefNumber",
+      "type": "INTEGER"
+    },
+    {
+      "name": "Email",
+      "type": "STRING"
+    }
+  ]
+}
