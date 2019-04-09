@@ -1,5 +1,4 @@
-{
-  "fields": [
+[
     {
       "name": "TransactionRefNo",
       "type": "INTEGER"
@@ -17,8 +16,12 @@
       "type": "STRING"
     },
     {
+      "name": "DateTime",
+      "type": "DATETIME"
+    },
+    {
       "name": "CustomerRefNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "TellerRefNo",
@@ -41,20 +44,23 @@
       "type": "STRING"
     },
     {
-      "name": "ServiceProviderRefNo",
+      "name": "CheckNumber",
+      "type": "INTEGER"
+    },
+    {
+      "name": "CheckType",
       "type": "STRING"
     },
     {
-      "name": "ServiceProvider",
-      "type": "STRING"
-    },
-    {
-      "name": "Biller",
-      "type": "STRING"
+      "name": "RoutingNumber",
+      "type": "INTEGER"
     },
     {
       "name": "AccountNumber",
       "type": "STRING"
+    },
+    {
+      "name": "IssuerRefNo",
+      "type": "INTEGER"
     }
   ]
-}

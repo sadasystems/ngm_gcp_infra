@@ -23,38 +23,19 @@ terragrunt = {
 # Dataflow
 #
 job_name = "ngm-dataflow-tier3-ck"
-max_workers = 1
+
+max_workers = 2
+
 on_delete = "cancel"
+
 template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
+
 temp_gcs_location = "gs://ngm-dataflow/tmp"
-job_parameters =
-    {
-      inputFilePattern = "gs://ngm-tier3-files/tier3/ck_transactions*",
-      JSONPath = "gs://ngm-dataflow/ck_transactions/files/ck_transactions-schema.json",
-      javascriptTextTransformGcsPath = "gs://ngm-dataflow/ck_transactions/files/csv-to-bq.js",
-      javascriptTextTransformFunctionName = "transform",
-      bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
-      outputDeadletterTable = "northgate-data-lake:tier3.ck_transactions_errors",
-      outputTable = "northgate-data-lake:tier3.ck_transactions"
-    }
 
-
-#
-# GCS Bucket Objects
-#
-bucket = "ngm-dataflow"
-
-object_list = [
-  {
-    source = "files/ck_transactions-schema.json",
-    destination = "ck_transactions/files/ck_transactions-schema.json"
-  },
-  {
-    source = "files/csv-to-bq.js",
-    destination = "ck_transactions/files/csv-to-bq.js"      
-  }
-]
-
-# append these additional users object permissions.
-role_entities = [
-]
+job_parameters = {
+  inputFilePattern                    = "gs://ngm-tier3-files/tier3/ck_transactions*"
+  JSONPath                            = "gs://ngm-dataflow/ck_transactions/files/ck_transactions-schema.json"
+  outputTable                         = "northgate-data-lake:tier3.ck_transactions"
+  bigQueryLoadingTemporaryDirectory   = "gs://ngm-dataflow/tmp"
+  outputDeadletterTable               = "northgate-data-lake:tier3.ck_transactions_errors"
+}

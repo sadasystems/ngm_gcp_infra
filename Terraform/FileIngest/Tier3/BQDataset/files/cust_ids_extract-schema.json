@@ -1,0 +1,22 @@
+[
+  {
+    "name": "CustomerRefNumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "IdentificationType",
+    "type": "STRING"
+  },
+  {
+    "name": "IdentificationNumber",
+    "type": "STRING"
+  },
+  {
+    "name": "ExpirationDate",
+    "type": "STRING"
+  },
+  {
+    "name": "DateTime",
+    "type": "DATETIME"
+  }
+]

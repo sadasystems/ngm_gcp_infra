@@ -35,4 +35,43 @@ time_partitioning = [
     type = "DAY"
   }
 ]
+
+table_list                 = [
+  {
+    table_name = "ck_transactions",
+    table_description = "Tier3 Check Transactions",
+    json_schema_file = "files/ck_transactions-schema.json"
+  },
+  {
+    table_name = "bp_transactions",
+    table_description = "Tier3 Bill Payment Transactions",
+    json_schema_file = "files/bp_transactions-schema.json"
+  },
+  {
+    table_name = "curc_transactions",
+    table_description = "Tier3 Currency Exchange Transactions",
+    json_schema_file = "files/curc_transactions-schema.json"
+  },
+  {
+    table_name = "cust_address_extract",
+    table_description = "Tier3 Customer Address Extract",
+    json_schema_file = "files/cust_address_extract-schema.json"
+  },
+  {
+    table_name = "cust_basic_common",
+    table_description = "Tier3 Customer Basic Common Extract",
+    json_schema_file = "files/cust_basic_common-schema.json"
+  },
+  {
+    table_name = "cust_email_extract",
+    table_description = "Tier3 Customer Emails Extract",
+    json_schema_file = "files/cust_email_extract-schema.json"
+  },
+  {
+    table_name = "cust_ids_extract",
+    table_description = "Tier3 Customer IDs Extract",
+    json_schema_file = "files/cust_ids_extract-schema.json"
+  }
+]
+
 view = {}

@@ -1,6 +1,6 @@
 
 module "big-query-dataset" {
-  source                     = "git@github.com:sadasystems/terraform_modules.git//gcp/bigquery/v1?ref=feature/NG-60-tf-module-bigquery"
+  source                     = "git@github.com:sadasystems/terraform_modules.git//gcp/bigquery/v1"
   dataset_id                 = "${var.dataset_id}"
   friendly_name              = "${var.friendly_name}"
   dataset_description        = "${var.dataset_description}"
