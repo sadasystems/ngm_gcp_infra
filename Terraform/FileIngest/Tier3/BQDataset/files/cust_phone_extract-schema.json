@@ -1,5 +1,4 @@
-{
-  "fields": [
+[
     {
       "name": "CustomerRefNumber",
       "type": "INTEGER"
@@ -12,5 +11,4 @@
       "name": "PhoneNumber",
       "type": "INTEGER"
     }
-  ]
-}
+]

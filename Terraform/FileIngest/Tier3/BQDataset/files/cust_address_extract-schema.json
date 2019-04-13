@@ -1,11 +1,7 @@
 [
   {
-    "name": "DateTime",
-    "type": "DATETIME"
-  },
-  {
     "name": "CustomerRefNumber",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "AddressType",

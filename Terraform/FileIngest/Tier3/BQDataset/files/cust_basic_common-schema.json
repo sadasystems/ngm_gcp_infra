@@ -1,9 +1,5 @@
 [
   {
-    "name": "DateTime",
-    "type": "DATETIME"
-  },
-  {
     "name": "CustomerRefNumber",
     "type": "INTEGER"
   },

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "IssuerRefNo",
+    "type": "INTEGER"
+  },
+  {
+    "name": "IdentificationType",
+    "type": "STRING"
+  },
+  {
+    "name": "IdentificationNumber",
+    "type": "STRING"
+  },
+  {
+    "name": "ExpirationDate",
+    "type": "STRING"
+  }
+]

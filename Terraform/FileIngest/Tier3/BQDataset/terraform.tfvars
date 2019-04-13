@@ -71,6 +71,41 @@ table_list                 = [
     table_name = "cust_ids_extract",
     table_description = "Tier3 Customer IDs Extract",
     json_schema_file = "files/cust_ids_extract-schema.json"
+  },
+  {
+    table_name = "cust_phone_extract",
+    table_description = "Tier3 Customer Phone Extract",
+    json_schema_file = "files/cust_phone_extract-schema.json"
+  },
+  {
+    table_name = "iss_acct_extract",
+    table_description = "Tier3 ISS Account Extract",
+    json_schema_file = "files/iss_acct_extract-schema.json"
+  },
+  {
+    table_name = "iss_addr_extract",
+    table_description = "Tier3 ISS Address Extract",
+    json_schema_file = "files/iss_acct_extract-schema.json"
+  },
+  {
+    table_name = "iss_basic_common",
+    table_description = "Tier3 ISS Basic Common Extract",
+    json_schema_file = "files/iss_basic_common-schema.json"
+  },
+  {
+    table_name = "isss_id_extract",
+    table_description = "Tier3 ISS Basic Common Extract",
+    json_schema_file = "files/iss_basic_common-schema.json"
+  },
+  {
+    table_name = "mo_transactions",
+    table_description = "Tier3 Money Order Transactions",
+    json_schema_file = "files/mo_transactions-schema.json"
+  },
+  {
+    table_name = "pin_transactions",
+    table_description = "Tier3 PIN Transactions",
+    json_schema_file = "files/pin_transactions-schema.json"
   }
 ]
 
