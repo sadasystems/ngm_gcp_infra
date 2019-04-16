@@ -1,6 +1,6 @@
-# ngm_gcp_infra
+# terraform-data-pipeline
 
-This repository contains the Terraform code for Northgate Markets Infrastructure as Code provisioning in Google Cloud Platform.
+This repository contains the Terraform code for Northgate Markets Infrastructure as Code to provision a data ingestion pipeline in Google Cloud Platform.  The pipeline will accept multiple forms of source data in Google Cloud STorage, API endpoint and CLoud SQL, then passes the data into BigQuery tables.
 
 ## TL;DR
 
