@@ -1,10 +1,10 @@
 # Terraform Component
 
-Dataflow Job
+BigQuery Dataset and Tables
 
 ## Description
 
-This component provisions the dataflow job and associated pipeline code into GCP, in support of ingesting Tier3 and powercheck files.
+This component provisions the Bigquery dataset and associated table(s) in support of the Cloud SQL data that needs to be ingested into the tables.
 
 ---
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
