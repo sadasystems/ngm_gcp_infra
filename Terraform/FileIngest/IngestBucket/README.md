@@ -1,10 +1,10 @@
 # Terraform Component
 
-Bucket
+Ingest Bucket
 
 ## Description
 
-TODO
+This component is responsible for creation of the GCS Bucket used to drop csv files into, for later ingestion by Dataflow jobs assigned to pick them up.
 
 
 ---
