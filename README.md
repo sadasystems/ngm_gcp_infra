@@ -4,7 +4,9 @@ This repository contains the Terraform code for Northgate Markets Infrastructure
 
 ## TL;DR
 
-If you just need to just go, you know how to execute this code already, and don't wish to read all the info below ( *strongly-recommended* ), simply run the following commands from the top-level directly.
+Run the following commands from the top-level directly.
+
+These commands assume you are already authenticated with your GCP user, or a service account.
 
 Provision all infrastructure:
 ```bash
@@ -30,18 +32,18 @@ BSD - "Berkeley Software Distribution"
 
 | Environment | GCP Project | GCP TF State Bucket | Region | Notes |
 | ------ | ------ | ------ |  ------ |   ------ |
-| Prod | TBD | - | TBD |
+| Prod | northgate-data-lake | tfstate-northgate-data-lake | us-west1 |
 
 ## Requirements for Successful Execution
 
 ### Git Repo Access
 
-This repository and the Terraform code housed here utilizes Terraform 'modules', which are stored in a separate Git repository:  https://github.com/sadasystems/gcp_tf_modules  Consequently, regardless of how this code is executed, or by whom, access to the `gcp_tf_modules` repository is required for successful execution.  Upon init of terraform, the modules will be downloaded automatically to this repo in special hidden directories.
+This repository and the Terraform code housed here utilizes Terraform modules, which are stored in a separate Git repository:  https://github.com/sadasystems/gcp_tf_modules  Consequently, regardless of how this code is executed, or by whom, access to the `gcp_tf_modules` repository is required for successful execution.  Upon init of terraform, the modules will be downloaded automatically to this repo in special hidden directories.
 
 
 ### Execution Environment
 
-Although the code was written and tested primarily from a MacBook MacOS environment, it should be generally expected to still work on a Linux (CentOS/Ubuntu,etc.), however as is the case with other BSD-derived OS's, there can be differences with certain OS-supplied commands because they  don't use GNU-type.   Since we are primarly running things with Terraform and Terragrunt, which are both written in GO, they should be expected to run the same on any platform.
+Although the code was written and tested primarily from within a MacBook MacOS, it should be generally expected to still work on a Linux (CentOS/Ubuntu,etc.), however as is the case with other BSD-derived OS's, there can be differences with certain OS-supplied commands because they  don't use GNU-type.   Since we are primarly running things with Terraform and Terragrunt, which are both written in GO, they should be expected to run the same on any platform.
 
 ### Environment Variables
 
@@ -68,7 +70,7 @@ The following is the list of required software needed to execute this code.  Ins
 
 * [Google Cloud SDK] - The Cloud SDK is a set of tools (gcloud, gsutils,etc.) for Cloud Platform.
 
-* [Terragrunt] - Terragrunt is a GO binary, used  thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.
+* [Terragrunt] - Terragrunt is a GO binary, used as as thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.
 
 * [Terraform] - Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.
 
@@ -182,9 +184,9 @@ This will run `terragrunt` and build just the OpenVpn component.
 
 ##### Terraform State
 
-It is important to understand the function of Terraform state data. That topic is out of the scope of this document, but for this project, "tfstate" as is typically referred to, is stored in a GCP Bucket: `northgate-markets-terraform-state`.   It will not be stored locally on any filesystem.  One must never assume that data is stored encrypted in this bucket. *_IT IS NOT_*.  Therefore always protect access to this bucket to only authorized persons or service accounts!  And always take care to think about how a secret is accessed or stored for creation of new resources with Terraform.
+It is important to understand the function of Terraform state data. That topic is out of the scope of this document, but for this project, "terraform state" as is sometimes referred to, is stored in a GCP Bucket: `northgate-markets-terraform-state`.   It will not be stored locally on any filesystem.  One must never assume that data is stored encrypted in this bucket. *_IT IS NOT_*.  Therefore always protect access to this bucket to only authorized persons or service accounts!  And always take care to think about how a secret is accessed or stored for creation of new resources with Terraform.
 
-[NOTE]:  The GCP bucket referred to is NOT created by this IaC code.  It must be created prior to running this code.
+[NOTE]:  The GCP bucket housing the terraform state file(s) is NOT created by this IaC code.  It must be created prior to running this code.
 
 #### FAQ
 
