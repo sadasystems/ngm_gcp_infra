@@ -1,0 +1,14 @@
+[
+  {
+    "name": "IssuerRefNo",
+    "type": "INTEGER"
+  },
+  {
+    "name": "PhoneType",
+    "type": "STRING"
+  },
+  {
+    "name": "PhoneNumber",
+    "type": "STRING"
+  }
+]

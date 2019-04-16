@@ -1,0 +1,34 @@
+[
+  {
+    "name": "CustomerRefNumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "FirstName",
+    "type": "STRING"
+  },
+  {
+    "name": "MiddleName",
+    "type": "STRING"
+  },
+  {
+    "name": "LastName",
+    "type": "STRING"
+  },
+  {
+    "name": "SecondLastName",
+    "type": "STRING"
+  },
+  {
+    "name": "DayOfBirth",
+    "type": "STRING"
+  },
+  {
+    "name": "MonthOfBirth",
+    "type": "STRING"
+  },
+  {
+    "name": "YearOfBirth",
+    "type": "STRING"
+  }
+]

@@ -31,30 +31,7 @@ job_parameters =
     {
       inputFilePattern = "gs://ngm-tier3-files/tier3/tu_transactions*",
       JSONPath = "gs://ngm-dataflow/tu_transactions/files/tu_transactions-schema.json",
-      javascriptTextTransformGcsPath = "gs://ngm-dataflow/tu_transactions/files/csv-to-bq.js",
-      javascriptTextTransformFunctionName = "transform",
+      outputTable = "northgate-data-lake:tier3.tu_transactions"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:tier3.tu_transactions_errors",
-      outputTable = "northgate-data-lake:tier3.tu_transactions"
     }
-
-
-#
-# GCS Bucket Objects
-#
-bucket = "ngm-dataflow"
-
-object_list = [
-  {
-    source = "files/tu_transactions-schema.json",
-    destination = "tu_transactions/files/tu_transactions-schema.json"
-  },
-  {
-    source = "files/csv-to-bq.js",
-    destination = "tu_transactions/files/csv-to-bq.js"      
-  }
-]
-
-# append these additional users object permissions.
-role_entities = [
-]
