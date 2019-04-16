@@ -35,4 +35,12 @@ time_partitioning = [
     type = "DAY"
   }
 ]
+
+table_list                 = [
+  {
+    table_name = "orders",
+    table_description = "Tier3 PDP DB Pronto Orders",
+    json_schema_file = "files/order_schema.json"
+  },
+]
 view = {}
