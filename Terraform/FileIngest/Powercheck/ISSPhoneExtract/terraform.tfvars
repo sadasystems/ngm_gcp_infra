@@ -23,7 +23,7 @@ terragrunt = {
 # Dataflow
 #
 job_name = "ngm-dataflow-powercheck-iss-phone"
-max_workers = 1
+max_workers = 2
 on_delete = "cancel"
 template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
@@ -31,11 +31,9 @@ job_parameters =
     {
       inputFilePattern = "gs://ngm-tier3-files/powercheck/iss_phone_extract*",
       JSONPath = "gs://ngm-dataflow/iss_phone_extract/files/iss_phone_extract-schema.json",
-      javascriptTextTransformGcsPath = "gs://ngm-dataflow/iss_phone_extract/files/csv-to-bq.js",
-      javascriptTextTransformFunctionName = "transform",
+      outputTable = "northgate-data-lake:powercheck.iss_phone_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:powercheck.iss_phone_extract_errors",
-      outputTable = "northgate-data-lake:powercheck.iss_phone_extract"
     }
 
 

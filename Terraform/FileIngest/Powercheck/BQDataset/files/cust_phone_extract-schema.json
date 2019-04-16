@@ -1,0 +1,14 @@
+[
+  {
+    "name": "CustomerRefNumber",
+    "type": "INTEGER"
+  },
+  {
+    "name": "PhoneType",
+    "type": "STRING"
+  },
+  {
+    "name": "PhoneNumber",
+    "type": "INTEGER"
+  }
+]

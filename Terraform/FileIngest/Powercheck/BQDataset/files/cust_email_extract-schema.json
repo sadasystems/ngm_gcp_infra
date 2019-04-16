@@ -1,0 +1,10 @@
+[
+  {
+    "name": "CustomerRefNo",
+    "type": "INTEGER"
+  },
+  {
+    "name": "Email",
+    "type": "STRING"
+  }
+]

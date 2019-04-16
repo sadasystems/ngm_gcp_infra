@@ -106,6 +106,26 @@ table_list                 = [
     table_name = "pin_transactions",
     table_description = "Tier3 PIN Transactions",
     json_schema_file = "files/pin_transactions-schema.json"
+  },
+  {
+    table_name = "teller_extract",
+    table_description = "Tier3 Tellers Extract",
+    json_schema_file = "files/teller_extract-schema.json"
+  },
+ {
+    table_name = "tu_transactions",
+    table_description = "Tier3 TU Transactions",
+    json_schema_file = "files/tu_transactions-schema.json"
+  },
+ {
+    table_name = "wt_receive_transactions",
+    table_description = "Tier3 WT Receive Transactions",
+    json_schema_file = "files/wt_receive_transactions-schema.json"
+  },
+ {
+    table_name = "wt_send_transactions",
+    table_description = "Tier3 WT Send Transactions",
+    json_schema_file = "files/wt_send_transactions-schema.json"
   }
 ]
 

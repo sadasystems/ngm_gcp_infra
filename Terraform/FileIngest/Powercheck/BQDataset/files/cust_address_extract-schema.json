@@ -1,7 +1,7 @@
 [
   {
     "name": "CustomerRefNumber",
-    "type": "STRING"
+    "type": "INTEGER"
   },
   {
     "name": "AddressType",

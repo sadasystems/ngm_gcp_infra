@@ -23,7 +23,7 @@ terragrunt = {
 # Dataflow Job Parameters
 #
 job_name = "ngm-dataflow-db-pdp-chk-disb"
-max_workers = 1
+max_workers = 2
 on_delete = "cancel"
 template_gcs_path = "gs://ngm-dataflow/templates/SqlToBigQueryBatch"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
