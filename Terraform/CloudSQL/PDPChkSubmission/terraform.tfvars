@@ -29,9 +29,9 @@ template_gcs_path = "gs://ngm-dataflow/templates/SqlToBigQueryBatch"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
-      connectionURL = "jdbc:mysql://35.235.78.167/mysql?cloudSqlInstance=gplerma-sada-test:us-west2:gplerma-mysql-0&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=root&password=6ihBH6GpPyhdcu47",
-      username = "root",
-      password = "6ihBH6GpPyhdcu47",
+      connectionURL = "jdbc:mysql://google/mysql?cloudSqlInstance=river-daylight-218321:us-west1:northgatepdp-stage-esb-db-mysql&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=sada&password=sada@1234",
+      username = "sada",
+      password = "sada@1234",
       query = <<EOF
 SELECT cm.*, 
 sm.store_name,
