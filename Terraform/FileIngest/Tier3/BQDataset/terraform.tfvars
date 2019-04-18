@@ -87,6 +87,11 @@ table_list                 = [
     table_description = "Tier3 ISS Address Extract",
     json_schema_file = "files/iss_acct_extract-schema.json"
   },
+   {
+    table_name = "iss_phone_extract",
+    table_description = "Tier3 ISS Phone Extract",
+    json_schema_file = "files/iss_phone_extract-schema.json"
+  },
   {
     table_name = "iss_basic_common",
     table_description = "Tier3 ISS Basic Common Extract",

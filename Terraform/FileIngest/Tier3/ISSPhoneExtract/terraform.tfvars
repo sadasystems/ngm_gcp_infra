@@ -31,30 +31,7 @@ job_parameters =
     {
       inputFilePattern = "gs://ngm-tier3-files/tier3/iss_phone_extract*",
       JSONPath = "gs://ngm-dataflow/iss_phone_extract/files/iss_phone_extract-schema.json",
-      javascriptTextTransformGcsPath = "gs://ngm-dataflow/iss_phone_extract/files/csv-to-bq.js",
-      javascriptTextTransformFunctionName = "transform",
+      outputTable = "northgate-data-lake:tier3.iss_phone_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:tier3.iss_phone_extract_errors",
-      outputTable = "northgate-data-lake:tier3.iss_phone_extract"
     }
-
-
-#
-# GCS Bucket Objects
-#
-bucket = "ngm-dataflow"
-
-object_list = [
-  {
-    source = "files/iss_phone_extract-schema.json",
-    destination = "iss_phone_extract/files/iss_phone_extract-schema.json"
-  },
-  {
-    source = "files/csv-to-bq.js",
-    destination = "iss_phone_extract/files/csv-to-bq.js"      
-  }
-]
-
-# append these additional users object permissions.
-role_entities = [
-]
