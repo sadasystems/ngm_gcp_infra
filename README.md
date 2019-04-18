@@ -164,11 +164,24 @@ This will run `terragrunt` and build just the Network component.
 Example 2:
 
 ```bash
-$ cd Terraform/OpenVpn
+$ cd Terraform/FileIngest/BQDataset
 $ terragrunt apply
 ```
 
-This will run `terragrunt` and build just the OpenVpn component.
+This will run `terragrunt` and build just the Powercheck BQDataset component.
+
+
+#### Execution of *-all while including or excluding certain directories
+
+You can use the `--terragrunt-include-dir` and `--terragrunt-exclude-dir` in different combinations, if you wish to perform `*-all` operations, but still need to include or exclude certain directories of terraform components.
+
+Example 1:
+Execute terragrunt `apply-all` on just the Terraform/FileIngest/Tier3 directory, but also exclude ./Terraform/FileIngest/Tier3/BQDataset/ and ./Terraform/Core/GoogleApiServices/
+
+```bash
+terragrunt apply-all  --terragrunt-include-dir ./Terraform/FileIngest/Tier3/ --terragrunt-exclude-dir ./Terraform/FileIngest/Tier3/BQDataset/ --terragrunt-exclude-dir ./Terraform/Core/GoogleApiServices/
+```
+
 
 
 [NOTE]: You should be aware that most components have dependencies built in, and that may require other components to be built first.  For example, you cannot build the LbHttpProxy component without building MigHttpProxy first, because LbHttpProxy will depend on certain resources from MigHttpProxy.
