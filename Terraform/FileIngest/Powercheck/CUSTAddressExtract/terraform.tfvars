@@ -33,7 +33,7 @@ template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 
 job_parameters = {
-  inputFilePattern                  = "gs://ngm-tier3-files/powercheck/cust_address_extract*"
+  inputFilePattern                  = "gs://ngm-powercheck-files/cust_address_extract*"
   JSONPath                          = "gs://ngm-dataflow/cust_address_extract/files/cust_address_extract-schema.json"
   outputTable                       = "northgate-data-lake:powercheck.cust_address_extract"
   bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp"

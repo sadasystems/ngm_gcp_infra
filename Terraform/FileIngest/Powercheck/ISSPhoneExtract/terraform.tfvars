@@ -29,7 +29,7 @@ template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
-      inputFilePattern = "gs://ngm-tier3-files/powercheck/iss_phone_extract*",
+      inputFilePattern = "gs://ngm-powercheck-files/iss_phone_extract*",
       JSONPath = "gs://ngm-dataflow/iss_phone_extract/files/iss_phone_extract-schema.json",
       outputTable = "northgate-data-lake:powercheck.iss_phone_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
@@ -49,7 +49,7 @@ object_list = [
   },
   {
     source = "files/csv-to-bq.js",
-    destination = "iss_phone_extract/files/csv-to-bq.js"      
+    destination = "iss_phone_extract/files/csv-to-bq.js"
   }
 ]
 

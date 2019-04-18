@@ -33,7 +33,7 @@ template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 
 job_parameters = {
-  inputFilePattern                    = "gs://ngm-tier3-files/tier3/ck_transactions*"
+  inputFilePattern                    = "gs://ngm-tier3-files/ck_transactions*"
   JSONPath                            = "gs://ngm-dataflow/ck_transactions/files/ck_transactions-schema.json"
   outputTable                         = "northgate-data-lake:tier3.ck_transactions"
   bigQueryLoadingTemporaryDirectory   = "gs://ngm-dataflow/tmp"

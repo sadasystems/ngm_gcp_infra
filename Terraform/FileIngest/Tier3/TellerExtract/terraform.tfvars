@@ -29,7 +29,7 @@ template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
-      inputFilePattern = "gs://ngm-tier3-files/tier3/teller_extract*",
+      inputFilePattern = "gs://ngm-tier3-files/teller_extract*",
       JSONPath = "gs://ngm-dataflow/teller_extract/files/teller_extract-schema.json",
       outputTable = "northgate-data-lake:tier3.teller_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
