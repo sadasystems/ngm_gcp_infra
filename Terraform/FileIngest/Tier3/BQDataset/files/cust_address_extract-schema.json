@@ -1,6 +1,6 @@
 [
   {
-    "name": "CustomerRefNumber",
+    "name": "CustomerRefNo",
     "type": "STRING"
   },
   {

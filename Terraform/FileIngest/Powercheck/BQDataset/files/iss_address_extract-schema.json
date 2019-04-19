@@ -1,26 +1,26 @@
 [
-  {
-    "name": "IssuerRefNo",
-    "type": "INTEGER"
-  },
-  {
-    "name": "AddressType",
-    "type": "STRING"
-  },
-  {
-    "name": "Address",
-    "type": "STRING"
-  },
-  {
-    "name": "City",
-    "type": "STRING"
-  },
-  {
-    "name": "State",
-    "type": "STRING"
-  },
-  {
-    "name": "ZipCode",
-    "type": "STRING"
-  }
+    {
+      "name": "IssuerRefNo",
+      "type": "STRING"
+    },
+    {
+      "name": "AddressType",
+      "type": "STRING"
+    },
+    {
+      "name": "Address",
+      "type": "STRING"
+    },
+    {
+      "name": "City",
+      "type": "STRING"
+    },
+    {
+      "name": "State",
+      "type": "STRING"
+    },
+    {
+      "name": "ZipCode",
+      "type": "STRING"
+    }
 ]

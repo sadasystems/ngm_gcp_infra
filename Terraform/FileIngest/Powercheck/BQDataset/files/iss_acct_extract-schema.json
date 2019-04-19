@@ -1,14 +1,14 @@
 [
-  {
-    "name": "IssuerRefNo",
-    "type": "INTEGER"
-  },
-  {
-    "name": "RoutingNumber",
-    "type": "INTEGER"
-  },
-  {
-    "name": "AccountNumber",
-    "type": "STRING"
-  }
+    {
+      "name": "IssuerRefNo",
+      "type": "STRING"
+    },
+    {
+      "name": "RoutingNumber",
+      "type": "STRING"
+    },
+    {
+      "name": "AccountNumber",
+      "type": "STRING"
+    }
 ]

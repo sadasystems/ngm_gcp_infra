@@ -1,7 +1,7 @@
 [
     {
-      "name": "CustomerRefNumber",
-      "type": "INTEGER"
+      "name": "CustomerRefNo",
+      "type": "STRING"
     },
     {
       "name": "PhoneType",
@@ -9,6 +9,6 @@
     },
     {
       "name": "PhoneNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     }
 ]

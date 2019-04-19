@@ -1,7 +1,7 @@
 [
   {
     "name": "IssuerRefNo",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "IssuerName",

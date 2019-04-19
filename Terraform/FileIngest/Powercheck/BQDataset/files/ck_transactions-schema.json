@@ -1,11 +1,11 @@
 [
     {
       "name": "TransactionRefNo",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "StoreRefNo",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "Date",
@@ -21,11 +21,11 @@
     },
     {
       "name": "CustomerRefNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "TellerRefNo",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "Amount",
@@ -45,7 +45,7 @@
     },
     {
       "name": "CheckNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "CheckType",
@@ -53,14 +53,14 @@
     },
     {
       "name": "RoutingNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "AccountNumber",
-      "type": "INTEGER"
+      "type": "STRING"
     },
     {
       "name": "IssuerRefNo",
-      "type": "INTEGER"
+      "type": "STRING"
     }
   ]
