@@ -83,7 +83,7 @@ table_list                 = [
     json_schema_file = "files/iss_acct_extract-schema.json"
   },
   {
-    table_name = "iss_addr_extract",
+    table_name = "iss_address_extract",
     table_description = "Tier3 ISS Address Extract",
     json_schema_file = "files/iss_acct_extract-schema.json"
   },
@@ -100,7 +100,7 @@ table_list                 = [
   {
     table_name = "isss_id_extract",
     table_description = "Tier3 ISS Basic Common Extract",
-    json_schema_file = "files/iss_basic_common-schema.json"
+    json_schema_file = "files/isss_id_extract-schema.json"
   },
   {
     table_name = "mo_transactions",

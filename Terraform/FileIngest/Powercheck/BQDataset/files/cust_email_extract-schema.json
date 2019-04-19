@@ -1,10 +1,10 @@
 [
-  {
-    "name": "CustomerRefNo",
-    "type": "INTEGER"
-  },
-  {
-    "name": "Email",
-    "type": "STRING"
-  }
+    {
+      "name": "CustomerRefNo",
+      "type": "STRING"
+    },
+    {
+      "name": "Email",
+      "type": "STRING"
+    }
 ]

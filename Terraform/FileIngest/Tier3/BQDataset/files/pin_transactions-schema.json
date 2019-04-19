@@ -1,11 +1,11 @@
 [
   {
     "name": "TransactionRefNo",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "StoreRefNo",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "Date",
@@ -21,11 +21,11 @@
   },
   {
     "name": "CustomerRefNumber",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "TellerRefNo",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "Amount",
@@ -45,7 +45,7 @@
   },
   {
     "name": "ServiceProviderRefNo",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "name": "ServiceProvider",
@@ -53,6 +53,6 @@
   },
   {
     "name": "PinlessPhoneNumber",
-    "type": "INTEGER"
+    "type": "STRING"
   }
 ]
