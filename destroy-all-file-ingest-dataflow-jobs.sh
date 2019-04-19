@@ -1,0 +1,1 @@
+terragrunt destroy-all  --terragrunt-include-dir ./Terraform/FileIngest/Tier3/ --terragrunt-include-dir ./Terraform/FileIngest/Powercheck/  --terragrunt-exclude-dir ./Terraform/FileIngest/Tier3/BQDataset/ --terragrunt-exclude-dir ./Terraform/Core/GoogleApiServices/

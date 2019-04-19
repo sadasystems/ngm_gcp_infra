@@ -85,7 +85,7 @@ table_list                 = [
   {
     table_name = "iss_address_extract",
     table_description = "Tier3 ISS Address Extract",
-    json_schema_file = "files/iss_acct_extract-schema.json"
+    json_schema_file = "files/iss_address_extract-schema.json"
   },
    {
     table_name = "iss_phone_extract",
