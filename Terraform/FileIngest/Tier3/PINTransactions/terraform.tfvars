@@ -29,7 +29,7 @@ template_gcs_path = "gs://ngm-dataflow/templates/TextToBigQueryStreaming"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
-      inputFilePattern = "gs://ngm-tier3-files/tier3/pin_transactions*",
+      inputFilePattern = "gs://ngm-tier3-files/pin_transactions*",
       JSONPath = "gs://ngm-dataflow/pin_transactions/files/pin_transactions-schema.json",
       outputTable = "northgate-data-lake:tier3.pin_transactions"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
@@ -49,7 +49,7 @@ object_list = [
   },
   {
     source = "files/csv-to-bq.js",
-    destination = "pin_transactions/files/csv-to-bq.js"      
+    destination = "pin_transactions/files/csv-to-bq.js"
   }
 ]
 
