@@ -29,42 +29,10 @@ template_gcs_path = "gs://ngm-dataflow/templates/SqlToBigQueryBatch"
 temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
-      connectionURL = "jdbc:mysql://google/mysql?cloudSqlInstance=river-daylight-218321:us-west1:northgatepdp-stage-esb-db-mysql&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false&user=sada&password=sada@1234",
-      username = "sada",
-      password = "sada@1234",
-      query = <<EOF
-SELECT cm.*, 
-sm.store_name,
-cust.first_name,
-cust.last_name,
-em.employee_name,
-cjs.check_issuer_refno,
-cjs.check_number,
-cjs.check_date,
-cjs.check_amount,
-cjs.check_routing_number,
-cjs.check_account_number,
-cjs.iqa_status,
-cjs.iqa_status_datetime,
-cjs.item_status,
-cjs.item_status_datetime,
-cjs.processing_status,
-cjs.processing_status_datetime,
-cjs.transaction_status,
-cjs.transaction_status_datetime,
-cjs.settlement_status,
-cjs.settlement_status_datetime,
-cjs.batch_reference_number,
-cjs.batch_reference_number,
-cjs.transaction_reference_number 
-FROM check_master AS cm 
-INNER JOIN store_master AS sm ON cm.store_refno=sm.store_refno 
-INNER JOIN customer_master AS cust ON cm.customer_refno=cust.customer_refno 
-INNER JOIN employee_master em ON cm.teller_refno=em.northgate_employee_id 
-LEFT JOIN check_jh_status AS cjs ON cm.check_master_id=cjs.check_master_id
-EOF
-,
-      JSONPath = "gs://ngm-dataflow/cust_address_extract/files/db_pdp_chk_disb.json",
+      connectionString = "jdbc:mysql://google/pdp?cloudSqlInstance=river-daylight-218321:us-west1:northgatepdp-stage-esb-db-mysql&socketFactory=com.google.cloud.sql.mysql.SocketFactory&useSSL=false",
+      username = "teamsada",
+      password = "WAV!fx19",
+      query = "SELECT cm.*, sm.store_name, cust.first_name, cust.last_name, em.employee_name, cjs.check_issuer_refno, cjs.check_number, cjs.check_date, cjs.check_amount, cjs.check_routing_number, cjs.check_account_number, cjs.iqa_status, cjs.iqa_status_datetime, cjs.item_status, cjs.item_status_datetime, cjs.processing_status, cjs.processing_status_datetime, cjs.transaction_status, cjs.transaction_status_datetime, cjs.settlement_status, cjs.settlement_status_datetime, cjs.batch_reference_number, cjs.batch_reference_number, cjs.transaction_reference_number FROM check_master AS cm INNER JOIN store_master AS sm ON cm.store_refno=sm.store_refno INNER JOIN customer_master AS cust ON cm.customer_refno=cust.customer_refno INNER JOIN employee_master em ON cm.teller_refno=em.northgate_employee_id LEFT JOIN check_jh_status AS cjs ON cm.check_master_id=cjs.check_master_id",
       outputTable = "northgate-data-lake:db_pdp.ck_disbursement",
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
     }
