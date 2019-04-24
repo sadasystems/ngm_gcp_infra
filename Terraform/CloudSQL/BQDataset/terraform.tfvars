@@ -24,7 +24,7 @@ terragrunt = {
 #
 dataset_id = "db_pdp"
 friendly_name = ""
-dataset_description = "Direct DB Extracts - Check Disbursements"
+dataset_description = "Direct DB Extracts "
 delete_contents_on_destroy = true
 dataset_labels = {
   dataset = "db_pdp"
@@ -35,4 +35,13 @@ time_partitioning = [
     type = "DAY"
   }
 ]
+
+table_list                 = [
+  {
+    table_name = "ck_disbursement",
+    table_description = "PDP DB Check Disbursement",
+    json_schema_file = "files/db_pdp_chk_disb.json"
+  },
+]
+
 view = {}

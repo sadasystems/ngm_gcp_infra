@@ -1,12 +1,4 @@
 
-module "upload_files" {
-  source      = "git@github.com:sadasystems/terraform_modules.git//gcp/gcs_bucket_object/v1"
-  bucket_name = "${var.bucket}"
-  object_list = "${var.object_list}"
-
-  role_entities = "${var.role_entities}"
-}
-
 module "dataflow" {
   project_id        = "${var.project_id}"
   source            = "git@github.com:sadasystems/terraform_modules.git//gcp/dataflow/v1"

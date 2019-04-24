@@ -36,20 +36,3 @@ job_parameters =
       outputTable = "northgate-data-lake:db_pdp.ck_disbursement",
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
     }
-
-#
-# GCS Bucket Objects upload
-#
-bucket = "ngm-dataflow"
-
-object_list = [
-  {
-    source = "files/db_pdp_chk_disb.json",
-    destination = "db_pdp_chk_disb/files/db_pdp_chk_disb.json"
-  },
-]
-
-# append these additional users object permissions.
-role_entities = [
-    "OWNER:user-george.lerma@sadasystems.com"
-]
