@@ -34,7 +34,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 
 job_parameters = {
   inputFilePattern                    = "gs://ngm-tier3-files/iss_basic_common*"
-  JSONPath                            = "gs://ngm-dataflow/iss_basic_common/files/iss_basic_common-schema.json"
   outputTable                         = "northgate-data-lake:tier3.iss_basic_common"
   bigQueryLoadingTemporaryDirectory   = "gs://ngm-dataflow/tmp"
   outputDeadletterTable               = "northgate-data-lake:tier3.iss_basic_common_errors"

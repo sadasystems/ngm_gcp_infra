@@ -33,7 +33,6 @@ job_parameters =
       timestamp = "08/12/2015",
       username = "teamsada",
       password = "WAVfx19",
-      JSONPath = "gs://ngm-dataflow/cust_address_extract/files/order_schema.json",
       outputTable = "northgate-data-lake:pdp.orders",
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
     }

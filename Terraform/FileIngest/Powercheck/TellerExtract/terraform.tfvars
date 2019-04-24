@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-powercheck-files/teller_extract*",
-      JSONPath = "gs://ngm-dataflow/teller_extract/files/teller_extract-schema.json",
       outputTable = "northgate-data-lake:powercheck.teller_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:powercheck.teller_extract_errors",

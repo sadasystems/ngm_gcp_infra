@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-tier3-files/pin_transactions*",
-      JSONPath = "gs://ngm-dataflow/pin_transactions/files/pin_transactions-schema.json",
       outputTable = "northgate-data-lake:tier3.pin_transactions"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:tier3.pin_transactions_errors",

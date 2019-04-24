@@ -34,7 +34,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 
 job_parameters = {
   inputFilePattern                  = "gs://ngm-tier3-files/cust_phone_extract*"
-  JSONPath                          = "gs://ngm-dataflow/cust_phone_extract/files/cust_phone_extract-schema.json"
   outputTable                       = "northgate-data-lake:tier3.cust_phone_extract"
   bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp"
   outputDeadletterTable             = "northgate-data-lake:tier3.cust_phone_extract_errors"

@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-powercheck-files/ck_transactions*",
-      JSONPath = "gs://ngm-dataflow/ck_transactions/files/ck_transactions-schema.json",
       outputTable = "northgate-data-lake:powercheck.ck_transactions"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:powercheck.ck_transactions_errors",
