@@ -13,6 +13,6 @@
   },
   {
     "name": "ExpirationDate",
-    "type": "DATETIME"
+    "type": "STRING"
   }
 ]

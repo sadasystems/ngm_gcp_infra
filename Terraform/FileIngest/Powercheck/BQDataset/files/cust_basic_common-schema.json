@@ -20,15 +20,7 @@
     "type": "STRING"
   },
   {
-    "name": "DayOfBirth",
-    "type": "STRING"
-  },
-  {
-    "name": "MonthOfBirth",
-    "type": "STRING"
-  },
-  {
-    "name": "YearOfBirth",
+    "name": "DOB",
     "type": "STRING"
   }
 ]
