@@ -9,7 +9,7 @@ module "upload_files" {
 
 module "dataflow" {
   project_id        = "${var.project_id}"
-  source            = "git@github.com:sadasystems/terraform_modules.git//gcp/dataflow/v1?ref=feature/NG-60-tf-module-bigquery"
+  source            = "git@github.com:sadasystems/terraform_modules.git//gcp/dataflow/v1"
   job_name          = "${var.job_name}"
   template_gcs_path = "${var.template_gcs_path}"
   temp_gcs_location = "${var.temp_gcs_location}"
