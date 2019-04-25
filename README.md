@@ -11,7 +11,7 @@ These commands assume you are already authenticated with your GCP user, or a ser
 Provision all infrastructure:
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-terraform-state
+$ TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt apply-all
 ```
 ##### Abbreviations
@@ -96,7 +96,7 @@ Example:
 
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt plan-all
 ```
 
@@ -106,7 +106,7 @@ Example:
 
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt apply-all
 ```
 
@@ -118,7 +118,7 @@ Example:
 
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt destroy-all
 ```
 
@@ -130,7 +130,7 @@ Example:
 
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt destroy-all --terraform-ignore-dependancy-errors
 ```
 
@@ -142,7 +142,7 @@ Example:
 
 ```bash
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt apply-all --terragrunt-non-interactive
 ```
 
@@ -155,7 +155,7 @@ Example 1:
 ```bash
 $ cd Terraform/Network
 $ export TF_VAR_env=dev
-$ export TF_VAR_bucket=northgate-markets-gcp
+$ export TF_VAR_bucket=tfstate-northgate-data-lake
 $ terragrunt apply
 ```
 
@@ -216,4 +216,3 @@ TODO
 As of : [  ]
 
 There were some issues or time-constrained features that were unable to be completed or accomplished:
-
