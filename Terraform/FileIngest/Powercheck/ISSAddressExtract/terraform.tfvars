@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-powercheck-files/iss_address_extract*",
-      JSONPath = "gs://ngm-dataflow/iss_address_extract/files/iss_address_extract-schema.json",
       outputTable = "northgate-data-lake:powercheck.iss_address_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:powercheck.iss_address_extract_errors",

@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-powercheck-files/cust_basic_common*",
-      JSONPath = "gs://ngm-dataflow/cust_basic_common/files/cust_basic_common-schema.json",
       outputTable = "northgate-data-lake:powercheck.cust_basic_common"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:powercheck.cust_basic_common_errors",

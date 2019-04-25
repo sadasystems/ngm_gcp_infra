@@ -30,7 +30,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 job_parameters =
     {
       inputFilePattern = "gs://ngm-tier3-files/isss_id_extract*",
-      JSONPath = "gs://ngm-dataflow/isss_id_extract/files/isss_id_extract-schema.json",
       outputTable = "northgate-data-lake:tier3.isss_id_extract"
       bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp",
       outputDeadletterTable = "northgate-data-lake:tier3.isss_id_extract_errors",

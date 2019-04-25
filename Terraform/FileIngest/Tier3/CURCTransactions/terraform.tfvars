@@ -34,7 +34,6 @@ temp_gcs_location = "gs://ngm-dataflow/tmp"
 
 job_parameters = {
   inputFilePattern                  = "gs://ngm-tier3-files/curc_transactions*"
-  JSONPath                          = "gs://ngm-dataflow/curc_transactions/files/curc_transactions-schema.json"
   outputTable                       = "northgate-data-lake:tier3.curc_transactions"
   bigQueryLoadingTemporaryDirectory = "gs://ngm-dataflow/tmp"
   outputDeadletterTable             = "northgate-data-lake:tier3.curc_transactions_errors"
