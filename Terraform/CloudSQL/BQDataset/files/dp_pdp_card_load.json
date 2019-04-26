@@ -1,0 +1,8 @@
+[
+  { "name": "customer_refno", "type": "STRING" },
+  { "name": "first_name", "type": "STRING" },
+  { "name": "last_name", "type": "STRING" },
+  { "name": "gpr_card_number", "type": "STRING" },
+  { "name": "expiry_date", "type": "STRING" },
+  { "name": "gpr_amount", "type": "STRING" }
+]
