@@ -1,0 +1,9 @@
+[
+  { "name": "first_name", "type": "STRING" },
+  { "name": "last_name", "type": "STRING" },
+  { "name": "customer_status", "type": "STRING" },
+  { "name": "ofac_status", "type": "STRING" },
+  { "name": "last_ofac_scan_datetime", "type": "STRING" },
+  { "name": "whitelist_status", "type": "STRING" },
+  { "name": "ofac_result", "type": "STRING" }
+]

@@ -42,6 +42,31 @@ table_list                 = [
     table_description = "PDP DB Check Disbursement",
     json_schema_file = "files/db_pdp_chk_disb.json"
   },
+  {
+    table_name = "ck_submission",
+    table_description = "PDP DB Check Submission",
+    json_schema_file = "files/db_pdp_chk_sbm.json"
+  },
+  {
+    table_name = "cust_ofac_history",
+    table_description = "Customer OFAC History",
+    json_schema_file = "files/db_pdp_cust_ofac_hist.json"
+  },
+  {
+    table_name = "cust_gpr_usg_hist",
+    table_description = "Customer GPR Usage History",
+    json_schema_file = "files/db_pdp_cust_ofac_hist.json"
+  },
+  {
+    table_name = "ck_underwriting",
+    table_description = "Check Underwriting Tracking",
+    json_schema_file = "files/dp_pdp_chk_underwriting.json"
+  },
+  {
+    table_name = "cust_gpr_card_load",
+    table_description = "Customer GRP Card Load",
+    json_schema_file = "files/dp_pdp_card_load.json"
+  }
 ]
 
 view = {}
